@@ -13,7 +13,7 @@
             align-items: center;
             background: #f4f4f4;
         }
-        a{
+        h1{
             width: fit-content;
             padding: 20px 40px;
             font-size: 40px;
@@ -21,11 +21,31 @@
             color: white;
             font-weight: 800;
             background: #202020;
-            border-radius: 20px;
+            border-radius: 0;
+            transition: all 5s;
         }
     </style>
 </head>
 <body>
-    <a href="./Tutorial/index.html">Click to get to site 1</a>
+
+    <h1 id="link" link="./Tutorial/index.html" class="text-light bg-dark">Click to get to site 1</h1>
+
+    <script>
+        document.getElementById('link').addEventListener("click",function(){
+            document.getElementById('link').textContent="wph";
+            document.getElementById('link').style.transform = "rotate(360deg)";
+            document.getElementById('link').style.color ="red";
+            document.getElementById('link').style.background ="yellow"; 
+        });
+        // document.getElementById('link').style.color ="red";
+        // document.getElementById('link').textContent = "wph";
+    </script>
 </body>
 </html>
+
+
+
+web development
+
+html -> css -> javascript -> bootstrap -> jQuery $ -> reactjs (frontend)
+php -> mysql -> mongodb -> node js (backend)
